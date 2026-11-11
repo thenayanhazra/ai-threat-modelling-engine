@@ -1,6 +1,27 @@
 # AI Threat Modelling Engine
 
-Turn architecture diagrams and infrastructure-as-code into an evidence-backed threat model: STRIDE findings, attack paths, MITRE ATT&CK mappings, prioritized recommendations, and an executive PDF.
+[![CI](https://github.com/thenayanhazra/AI-Threat-Modelling-Engine/actions/workflows/ci.yml/badge.svg)](https://github.com/thenayanhazra/AI-Threat-Modelling-Engine/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+**Turns an architecture diagram or infrastructure code into a threat model that a board can read and an engineer can act on.**
+
+Give it a Mermaid or draw.io diagram, Terraform, Kubernetes manifests or a Docker Compose file. It returns STRIDE findings tied to evidence in your own files, attack paths from the internet to your sensitive assets, MITRE ATT&CK mappings, and an executive PDF.
+
+## Why it matters
+
+- **Threat modelling usually lags delivery.** Workshops take weeks while the architecture changes daily. This produces a first-pass model in seconds, so expert time goes on judgment rather than inventory.
+- **Every finding shows its evidence.** Each threat points to the resource and setting that triggered it, with a confidence level. The report also states what it could not see, so nothing is claimed without a source.
+- **One analysis, two audiences.** The PDF opens with severity counts and priority actions for leadership. The JSON API feeds the same findings into engineering backlogs.
+
+## What you get
+
+A scan of [a sample payments platform](examples/payments-platform.yaml) with two deliberate weaknesses: a public admin console running as root, and payment secrets reachable from the internet.
+
+<img src="docs/img/sample-report.png" alt="Executive threat report showing severity counts, priority actions, a critical privilege finding and four attack paths" width="720">
+
+[Full sample report (PDF)](docs/sample-report.pdf): 11 findings and 4 attack paths, generated in under a second.
+
+---
 
 ## What works
 
