@@ -1,6 +1,6 @@
 # AI Threat Modelling Engine
 
-[![CI](https://github.com/thenayanhazra/AI-Threat-Modelling-Engine/actions/workflows/ci.yml/badge.svg)](https://github.com/thenayanhazra/AI-Threat-Modelling-Engine/actions/workflows/ci.yml)
+[![CI](https://github.com/thenayanhazra/ai-threat-modelling-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/thenayanhazra/ai-threat-modelling-engine/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 **Turns an architecture diagram or infrastructure code into a threat model that a board can read and an engineer can act on.**
