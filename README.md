@@ -62,6 +62,14 @@ curl -o threat-model.pdf \
 
 For `.yaml`/`.yml`, pass `kind=kubernetes` or `kind=compose` because the extension is ambiguous.
 
+### From the command line
+
+```bash
+pip install git+https://github.com/thenayanhazra/ai-threat-modelling-engine
+threat-model analyze examples/payments-platform.yaml --kind kubernetes \
+  --title "Payments Platform" --json model.json --pdf model.pdf
+```
+
 ## Development
 
 ```bash
