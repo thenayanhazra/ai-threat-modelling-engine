@@ -21,6 +21,8 @@ A scan of [a sample payments platform](examples/payments-platform.yaml) with two
 
 [Full sample report (PDF)](docs/sample-report.pdf): 11 findings and 4 attack paths, generated in under a second.
 
+> **Part of a kit.** This tool is one of four that [AI Security Assessment](https://github.com/thenayanhazra/ai-security-assessment) runs together against an AI agent platform, combining their findings into one executive report.
+
 ---
 
 ## What works
